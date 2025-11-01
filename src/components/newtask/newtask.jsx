@@ -3,7 +3,7 @@ import Calendar from '../calendar'
 const Newtask = () => {
     return (
         <>
-        Привет
+        Привет 1
         <Snewtask>
             <div class="pop-new-card" id="popNewCard">
                 <div class="pop-new-card__container">
