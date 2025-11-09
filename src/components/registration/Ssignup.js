@@ -76,3 +76,11 @@ export const Modal-btn-signup-ent = styled.button`
   font-weight: 500;
   letter-spacing: -0.14px;
   color: #FFFFFF; `;
+
+export const Modal-form-group = styled.div` 
+	text-align: center; `;
+
+export const Modal = styled.div`@media (max-width: 375px)
+background-color: #FFFFFF; `;
+
+export const Modal-block = styled.div'@media (max-width: 375px)
