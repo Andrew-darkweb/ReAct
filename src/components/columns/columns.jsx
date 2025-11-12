@@ -12,7 +12,7 @@ const Columns = () => {
                                 <form class="pop-new-card__form form-new" id="formNewCard" action="#">
                                     <div class="form-new__block">
                                         <label for="formTitle" class="subttl">Название задачи</label>
-                                        <input class="form-new__input" type="text" name="name" id="formTitle" placeholder="Введите название задачи..." autofocus>
+                                        <input class="form-new__input" type="text" name="name" id="formTitle" placeholder="Введите название задачи..." autofocus />
                                     </div>
                                     <div class="form-new__block">
                                         <label for="textArea" class="subttl">Описание задачи</label>
@@ -86,7 +86,7 @@ const Columns = () => {
                                             </div>
                                         </div>
 
-                                        <input type="hidden" id="datepick_value" value="08.09.2023">
+                                        <input type="hidden" id="datepick_value" value="08.09.2023"/>
                                             <div class="calendar__period">
                                                 <p class="calendar__p date-end">Выберите срок исполнения <span class="date-control"></span>.</p>
                                             </div>
@@ -107,6 +107,10 @@ const Columns = () => {
                                     </div>
                                 </div>
                             </div>
-                            <Scolumns />
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                            </Scolumns>
                             );
 };
