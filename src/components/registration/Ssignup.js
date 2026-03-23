@@ -16,6 +16,12 @@ export const Container-signup = styled.div`
  	width: 100vw;
   	min-height: 100vh;
  	margin: 0 auto; `;
+
+export const _hover01 = styled.div`
+hover {
+  background-color: #33399b;
+}`;
+
 export const Modal = styled.div`
   width: 100%;
   height: 100%;
@@ -26,7 +32,7 @@ export const Modal = styled.div`
   align-items: center;
   justify-content: center; `;
 
-export const Modal-block = styled.div`
+export const modal__block = styled.div`
   margin: 0 auto;
   background-color: #FFFFFF;
   max-width: 368px;
@@ -36,7 +42,7 @@ export const Modal-block = styled.div`
   border: 0.7px solid #D4DBE5;
   box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.13); `;
 
-export const Modal-ttl = styled.div`
+export const modal__ttl = styled.div`
   text-align: center;
   font-size: 20px;
   font-weight: 700;
@@ -44,22 +50,39 @@ export const Modal-ttl = styled.div`
   letter-spacing: -0.6px;
   margin-bottom: 20px; `;
 
-export const Modal-form-login = styled.form`
+export const modal__form-login = styled.form`
 	width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; `;
-
-export const Modal-input = styled.input`
+  justify-content: center;
+  &:input:not(:last-child) {
+  margin-bottom: 7px;
+  } `;
+export const modal__input = styled.input`
   width: 100%;
   min-width: 100%;
   border-radius: 8px;
   border: 0.7px solid rgba(148, 166, 190, 0.4);
   outline: none;
-  padding: 10px 8px; `;
-
-export const Modal-btn-signup-ent = styled.button`
+  padding: 10px 8px; 
+  &::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.28px;
+  color: #94A6BE;
+  }
+  &::placeholder {
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.28px;
+  color: #94A6BE;
+  }`;
+export const modal__btn-signup-ent = styled.button`
   width: 100%;
   height: 30px;
   background-color: #565EEF;
@@ -77,10 +100,16 @@ export const Modal-btn-signup-ent = styled.button`
   letter-spacing: -0.14px;
   color: #FFFFFF; `;
 
-export const Modal-form-group = styled.div` 
+export const modal__form-group = styled.div` 
 	text-align: center; `;
 
 export const Modal = styled.div`@media (max-width: 375px)
 background-color: #FFFFFF; `;
 
-export const Modal-block = styled.div'@media (max-width: 375px)
+export const modal__block = styled.div`@media (max-width: 375px)
+    max-width: 368px;
+    width: 100%;
+    padding: 0 16px;
+    border-radius: none;
+    border: none;
+    box-shadow: none; `;

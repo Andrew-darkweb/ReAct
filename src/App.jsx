@@ -1,15 +1,16 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import { Ssignup } from './components/registration/Ssignup'
+import Header from './components/header/header'
+import Columns from './components/columns/columns'
+import { GlobalStyle } from './GlobalStyle'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-   <> 
-   <Ssignup/>
+   <>
+   <GlobalStyle/>
+   <Header/>
+   <Columns/>
   </>
   )
 }

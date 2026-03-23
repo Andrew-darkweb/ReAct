@@ -1,46 +1,61 @@
-import { Snewtask } from '/Snewtask.js'
+import { Snewtask,
+       PopNewCard,
+       PopCardContainer,
+       PopCardBlock,
+       PopCardContent,
+       PopCardTitle,
+       PopCardClose,
+       PopCardWrap,
+       PopCardForm,
+       Blockform,
+       Subtitle,
+       CategoryTheme,
+       CategoryThemes,
+       FormInput
+          } from '/Snewtask.js'
+import { Orange, Green, Purple } from '../cards/Scards.js'
 import Calendar from '../calendar'
 const Newtask = () => {
     return (
         <Snewtask>
-            <div className="pop-new-card" id="popNewCard">
-                <div className="pop-new-card__container">
-                    <div className="pop-new-card__block">
-                        <div className="pop-new-card__content">
-                            <h3 className="pop-new-card__ttl">Создание задачи</h3>
-                            <a href="#" className="pop-new-card__close">&#10006;</a>
-                            <div className="pop-new-card__wrap">
-                                <form className="pop-new-card__form form-new" id="formNewCard" action="#">
-                                    <div className="form-new__block">
-                                        <label for="formTitle" className="subttl">Название задачи</label>
-                                        <input className="form-new__input" type="text" name="name" id="formTitle" placeholder="Введите название задачи..." autofocus />
-                                    </div>
-                                    <div className="form-new__block">
+            <PopNewCard>
+                <PopCardContainer>
+                    <PopCardBlock>
+                        <PopCardContent>
+                            <PopCardTitle>Создание задачи</PopCardTitle>
+                            <PopCardClose href="#">&#10006;</PopCardClose>
+                            <PopCardWrap>
+                                <PopCardForm action="#">
+                                    <Blockform>
+                                        <Subtitle for="formTitle">Название задачи</Subtitle>
+                                        <FormInput type="text" name="name" id="formTitle" placeholder="Введите название задачи..." autofocus />
+                                    </Blockform>
+                                    <Blockform>
                                         <label for="textArea" className="subttl">Описание задачи</label>
                                         <textarea className="form-new__area" name="text" id="textArea" placeholder="Введите описание задачи..."></textarea>
-                                    </div>
-                                </form>
+                                    </Blockform>
+                                </PopCardForm>
                                 <Calendar />
-                            </div>
-                            <div className="pop-new-card__categories categories">
+                            </PopCardWrap>
+                            <Categories>
                                 <p className="categories__p subttl">Категория</p>
-                                <div className="categories__themes">
-                                    <div className="categories__theme _orange _active-category">
-                                        <p className="_orange">Web Design</p>
-                                    </div>
-                                    <div className="categories__theme _green">
-                                        <p className="_green">Research</p>
-                                    </div>
-                                    <div className="categories__theme _purple">
-                                        <p className="_purple">Copywriting</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </Snewtask>
+                                <CategoryThemes>
+                                    <CategoryTheme>
+                                        <Orange>Web Design</Orange>
+                                    </CategoryTheme>
+                                    <CategoryTheme>
+                                        <Green>Research</Green>
+                                    </CategoryTheme>
+                                    <CategoryTheme>
+                                        <Purple>Copywriting</Purple>
+                                    </CategoryTheme>
+                                </CategoryThemes>
+                            </Categories>
+                        </PopCardContent>
+                    </PopCardBlock>
+                </PopCardContainer>
+            </PopNewCard>
+        </Snewtask>
             );
 };
 export default Newtask;
